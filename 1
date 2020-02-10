@@ -1,0 +1,156 @@
+graaf = {
+    '009': {'008': 12.0},
+    '008': {'009': 12.0, '007': 6.3},
+    '007': {'008': 6.3, '0_trap4': 31.0, 'ingang': 42.0},
+    'ingang': {'0_trap5': 31.2, 'B': 24.2, 'kantine': 31.3, '006': 34.4, '0_trap2': 31.5, '007': 42.0},
+    '0_trap4': {'0_trap2': 35.0, '1_trap4': 12.0},
+    '0_trap2': {'0_trap4': 35.0, 'ingang': 31.5, '006': 11.5, '1_trap2': 12.0},
+    '006': {'0_trap2': 11.5, 'ingang': 34.4, 'B': 31.3, 'kantine': 10.5, 'aula': 5.1},
+    'aula': {'kantine': 10.6, '006': 5.1, '001': 8.5, '002': 11.5},
+    'kantine': {'aula': 10.6, '006': 10.5, 'ingang': 31.3, 'B': 7.9},
+    'B': {'ingang': 24.2, '006': 16.1, 'kantine': 7.9, '001': 9.2, '0_trap1': 5.5},
+    '0_trap1': {'B': 5.5, '1_trap1': 12},
+    '001': {'B': 9.2, 'aula': 8.5, '002': 15.7},
+    '002': {'001': 15.7, 'aula': 11.5, '003': 5.2, '005': 6.8},
+    '003': {'002': 5.2, '004': 4.9},
+    '004': {'003': 4.9, '0_trap3': 4.4},
+    '005': {'002': 6.8, '0_trap3': 6.5},
+    '0_trap3': {'005': 6.5, '004': 4.4, '1_trap3': 12.0},
+    '0_trap5': {'ingang': 31.2, '010': 13.0, '011': 14.6, '012': 18.8, '016': 4.8, '1_trap5': 12.0},
+    '010': {'0_trap5': 13.0},
+    '011': {'0_trap5': 14.6},
+    '012': {'0_trap5': 18.8, '0_trap6': 4.4},
+    '0_trap6': {'012': 4.4, '015': 11.9, '014': 6.3, '1_trap6': 12},
+    '015': {'0_trap6': 11.9},
+    '014': {'0_trap6': 6.3, '013': 1.6},
+    '013': {'014': 1.6, '016': 9.7},
+    '016': {'0_trap5': 4.8, '013': 9.7},
+    
+    '1_trap6': {'0_trap6': 12.0, '121': 9.3, '122': 4.1},
+    '121': {'1_trap6': 9.3, '120': 11.2},
+    '120': {'121': 11.2, '119': 8.3},
+    '119': {'120': 8.3, '1_trap5': 5.0},
+    '122': {'1_trap6': 4.1, '123': 1.6},
+    '123': {'122': 1.6, '124': 8.3},
+    '124': {'123': 8.3, '125': 7.2},
+    '125': {'124': 7.2, '1_trap5': 2.1},
+    '1_trap5': {'119': 5.0, '125': 2.1, '0_trap5': 12, 'kruispunt': 28.6},
+    'kruispunt': {'1_trap5': 28.6, 'A': 7.9, '110': 4.4, '102': 9.0, '109': 15.1},
+    '110': {'kruispunt': 4.4},
+    '102': {'kruispunt': 9.0, '103': 1.6},
+    '103': {'102': 1.6, '104': 13.6},
+    '104': {'103': 13.6, '105': 1.6},
+    '105': {'104': 1.6, '106': 7.9, '1_trap3': 9.6},
+    '106': {'105': 7.9, '107': 5.6, '1_trap3': 8.3},
+    '107': {'106': 5.6, '1_trap3': 3.4},
+    '1_trap3': {'108': 15.4, '105': 9.6, '106': 8.3, '107': 3.4, '0_trap3': 12.0, '2_trap3': 12.0},
+    '108': {'1_trap3': 15.4, '109': 12.6},
+    '109': {'108': 12.6, 'kruispunt': 15.1},
+    'A': {'kruispunt': 7.9, 'OLC': 6.3, '1_trap1': 5.5, '1_trap2': 19.1},
+    'OLC': {'A': 6.3, '1_trap2': 16.4},
+    '1_trap1': {'A': 5.5, '0_trap1': 12.0, '2_trap1': 12.0},
+    '1_trap2': {'A': 19.1, 'OLC': 16.4, '111': 2.4, '112': 12.2, '118': 24.3, '0_trap2': 12.0, '2_trap2': 12.0},
+    '111': {'1_trap2': 2.4},
+    '112': {'1_trap2': 12.2, '113': 1.6},
+    '113': {'112': 1.6, '114': 20.4},
+    '114': {'113': 20.4, '115': 1.6},
+    '115': {'114': 1.6, '116': 5.6},
+    '116': {'115': 5.6, '1_trap4': 5.3},
+    '117': {'118': 1.6, '1_trap4': 12.3},
+    '118': {'117': 1.6, '1_trap2': 24.3},
+    '1_trap4': {'116': 5.3, '117': 12.3, '0_trap4': 12.0, '2_trap4': 12.0},
+    
+    '2_trap1': {'1_trap1': 12.0, 'C': 5.5},
+    'C': {'2_trap1': 5.5, '218': 4.7, '201': 12.6, '207': 14.4, '208': 19.3, '2_trap2': 18.1},
+    '218': {'C': 4.7},
+    '201': {'C': 12.6, '202': 7.7},
+    '202': {'201': 7.7, '203': 20.3},
+    '203': {'202': 20.3, '204': 5.3},
+    '204': {'203': 5.3, '2_trap3': 5.2},
+    '2_trap3': {'204': 5.2, '205': 3.9, '1_trap3': 12.0},
+    '205': {'206': 19.1, '2_trap3': 3.9},
+    '206': {'205': 19.1, '207': 11.5},
+    '207': {'206': 11.5, 'C': 14.4},
+    '208': {'C': 19.3, '2_trap2': 5.6},
+    '2_trap2': {'208': 5.6, 'C': 18.1, '209': 4.1, '210': 24.3, '217': 14.9, '1_trap2': 12.0},
+    '209': {'2_trap2': 4.1},
+    '210': {'2_trap2': 24.3, '211': 1.6},
+    '211': {'212': 18.2, '210': 1.6},
+    '212': {'211': 18.2, '213': 1.6},
+    '213': {'212': 1.6, '214': 5.6},
+    '214': {'213': 5.6, '2_trap4': 5.3},
+    '2_trap4': {'214': 5.3, '215': 4.7, '1_trap4': 12.0},
+    '215': {'216': 14.8, '2_trap4': 4.7},
+    '216': {'215': 14.8, '217': 1.6},
+    '217': {'216': 1.6, '2_trap2': 14.9},
+   }
+
+start = str(input("Startpunt: "))
+eind = str(input("Eindpunt: "))
+tijd = float(input("Hoelaat wil je gaan?"))
+
+def dijkstra(graaf, start, eind, tijd):
+    onbezochte_knopen = graaf
+    kortste_afstand = {}
+    voorganger = {}
+    oneindig = 9999999
+    route = []
+    
+    for knoop in onbezochte_knopen:
+        kortste_afstand[knoop] = oneindig
+    kortste_afstand[start] = 0
+    
+    if 10.29 < tijd < 10.32:
+        print("Het is nu erg druk bij trap 1. Ik geef een andere, snellere route!")
+        del graaf['1_trap1']
+
+    elif 10.44 < tijd < 10.50:
+        print("Het is nu erg druk bij trap 1. Ik geef een andere, snellere route!")
+        del graaf['1_trap1']
+    
+    elif 12.19 < tijd < 12.22:
+        print("Het is nu erg druk bij trap 1. Ik geef een andere, snellere route!")
+        del graaf['1_trap1']
+       
+    elif 12.44 < tijd < 12.50:
+        print("Het is nu erg druk bij trap 1. Ik geef een andere, snellere route!")
+        del graaf['1_trap1']
+
+        
+    while onbezochte_knopen:
+        min_knoop = None
+        
+        for knoop in onbezochte_knopen:
+            
+            if min_knoop is None:
+                min_knoop = knoop
+                
+            elif kortste_afstand[knoop] < kortste_afstand[min_knoop]:
+                min_knoop = knoop
+
+        for buurknoop, gewicht in graaf[min_knoop].items():
+            
+            if gewicht + kortste_afstand[min_knoop] < kortste_afstand[buurknoop]:
+                kortste_afstand[buurknoop] = gewicht + kortste_afstand[min_knoop]
+                voorganger[buurknoop] = min_knoop
+                
+        onbezochte_knopen.pop(min_knoop)
+
+    huidige_knoop = eind
+    
+    while huidige_knoop != start:
+        
+        try:
+            route.insert(0,huidige_knoop)
+            huidige_knoop = voorganger[huidige_knoop]
+            
+        except KeyError:
+            print('Route is niet mogelijk.')
+            break
+        
+    route.insert(0,start)
+    if kortste_afstand[eind] != oneindig:
+        print('De kortste afstand is ' + str(round(kortste_afstand[eind], 2)) + ' meter.')
+        print('De route is ' + str(route))
+        
+dijkstra(graaf, start, eind, tijd)
